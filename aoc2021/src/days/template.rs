@@ -3,7 +3,7 @@ use crate::base::Day;
 pub struct DayXX;
 
 impl Day for DayXX {
-    type Parsed = u32;
+    type Parsed = usize;
     type Output1 = u32;
     type Output2 = u32;
 
@@ -39,7 +39,7 @@ mod tests {
             InputSource::File {
                 path: "data/dayXX_example.txt".to_string(),
             },
-            Some("input here"),
+            Some(300),
             None,
         )
     }
@@ -50,7 +50,7 @@ mod tests {
             InputSource::File {
                 path: "data/dayXX_real.txt".to_string(),
             },
-            Some("input here"),
+            Some(300),
             None,
         )
     }
@@ -62,7 +62,7 @@ mod tests {
                 path: "data/dayXX_example.txt".to_string(),
             },
             None,
-            Some("input here"),
+            Some(300),
         )
     }
 
@@ -73,7 +73,7 @@ mod tests {
                 path: "data/dayXX_real.txt".to_string(),
             },
             None,
-            Some("input here"),
+            Some(300),
         )
     }
 }
