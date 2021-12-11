@@ -1,5 +1,5 @@
 test:
-	cargo test -- --show-output
+	cargo test $(day) -- --show-output
 
 lint:
 	cargo fmt -- --check
